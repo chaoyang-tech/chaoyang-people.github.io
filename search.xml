@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/uncategorized/hello-world/</url>
+    <url>/Hello-HEXO/hello-world/</url>
     <content><![CDATA[<!-- test for math formula $a=b \times c$
 
 $$
@@ -27,5 +27,8 @@ you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>Hello HEXO!</category>
+      </categories>
   </entry>
 </search>
