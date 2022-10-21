@@ -2,12 +2,12 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/hello-world/2022/10/20/</url>
-    <content><![CDATA[<p>test for math formula <span class="math inline">\(a=b \times
-c\)</span></p>
-<p><span class="math display">\[
+    <url>/uncategorized:/title/</url>
+    <content><![CDATA[<!-- test for math formula $a=b \times c$
+
+$$
 a=x \times \alpha
-\]</span></p>
+$$ -->
 <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very
 first post. Check <a href="https://hexo.io/docs/">documentation</a> for
 more info. If you get any problems when using Hexo, you can find the
