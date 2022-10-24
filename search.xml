@@ -31,4 +31,84 @@ you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p
         <category>Hello HEXO!</category>
       </categories>
   </entry>
+  <entry>
+    <title>1. Introduction to CUDA</title>
+    <url>/CUDA/1-Introduction-to-CUDA/</url>
+    <content><![CDATA[<h1 id="introduction-to-cuda">1. Introduction to <code>CUDA</code></h1>
+<h2 id="the-benefits-of-using-gpus">1.1 The Benefits of Using GPUs</h2>
+<p>The Graphics Processing Unit (GPU) provides much higher
+<strong>instruction throughput</strong> and <strong>memory
+bandwidth</strong> than the CPU within a similar price and power
+envelope. Many applications leverage these higher capabilities to run
+faster on the GPU than on the CPU (see <a href="https://www.nvidia.com/object/gpu-applications.html">GPU
+Applications</a> on NVIDIA website). Other computing devices, like
+FPGAs, are also very energy efficient, but offer much less programming
+flexibility than GPUs.</p>
+<p>The following schematic Figure shows an example distribution of chip
+resources for a CPU versus a GPU. The GPU is specialized for highly
+parallel computations and therefore designed such that more transistors
+are devoted to <strong>data processing</strong> rather than <em>data
+caching</em> and <em>flow control</em>.</p>
+<p><img src="/CUDA/1-Introduction-to-CUDA/image-20221024133800478.png" alt="image-20221024133800478" style="zoom:67%;"></p>
+<h2 id="cuda-a-general-purpose-parallel-computing-platform-and-programming-model">1.2
+<code>CUDA</code>: A General-Purpose Parallel Computing Platform and
+Programming Model</h2>
+<p>In November 2006, NVIDIA introduced <code>CUDA</code>, a general
+purpose parallel computing platform and programming model that leverages
+the parallel compute engine in NVIDIA GPUs to solve many complex
+computational problems in a more efficient way than on a CPU.
+<code>CUDA</code> is designed to support various languages and
+application programming interfaces.</p>
+<figure>
+<img src="/CUDA/1-Introduction-to-CUDA/image-20221024134123393.png" alt="image-20221024134123393">
+<figcaption aria-hidden="true">image-20221024134123393</figcaption>
+</figure>
+<h2 id="a-scalable-programming-model">1.3 A Scalable Programming
+Model</h2>
+<p>The core of the <code>CUDA</code> parallel programming model are
+three key abstractions - <strong>a hierarchy of thread groups</strong>,
+<strong>shared memories</strong>, and <strong>barrier
+synchronization</strong>, which are simply exposed to the programmer as
+a minimal set of language extensions.</p>
+<p>These abstractions provide fine-grained data parallelism and thread
+parallelism, nested within coarse-grained data parallelism and task
+parallelism. They guide the programmer to partition the problem into
+coarse sub-problems that can be solved independently in parallel by
+blocks of threads, and each sub-problem into finer pieces that can be
+solved cooperatively in parallel by all threads within the block.</p>
+<p>This decomposition preserves language expressivity by allowing
+threads to cooperate when solving each sub-problem, and at the same time
+enables automatic scalability. Indeed, each block of threads can be
+scheduled on any of the available multiprocessors within a GPU, in any
+order, concurrently or sequentially, so that a compiled CUDA program can
+execute on any number of multiprocessors as illustrated bellow, and only
+the runtime system needs to know the physical multiprocessor count.</p>
+<figure>
+<img src="/CUDA/1-Introduction-to-CUDA/image-20221024135157716.png" alt="image-20221024135157716">
+<figcaption aria-hidden="true">image-20221024135157716</figcaption>
+</figure>
+<blockquote>
+<p>A GPU is built around an array of Streaming Multiprocessors (SMs)
+(see <a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#hardware-implementation">Hardware
+Implementation</a> for more details). A multi-threaded program is
+partitioned into blocks of threads that execute independently from each
+other, so that a GPU with more multiprocessors will automatically
+execute the program in less time than a GPU with fewer
+multiprocessors.</p>
+</blockquote>
+<h2 id="document-structure">1.4 Document Structure</h2>
+<p>This document is organized into the following sections:</p>
+<ol type="1">
+<li>The hierarchy of thread groups</li>
+<li>The hierarchy of GPU memories</li>
+<li>The synchronization mechanism</li>
+</ol>
+]]></content>
+      <categories>
+        <category>CUDA</category>
+      </categories>
+      <tags>
+        <tag>BASIC CUDA</tag>
+      </tags>
+  </entry>
 </search>
