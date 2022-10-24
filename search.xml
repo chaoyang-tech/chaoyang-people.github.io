@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>1. Introduction to CUDA</title>
+    <title>Introduction to CUDA</title>
     <url>/CUDA/1-Introduction-to-CUDA/</url>
     <content><![CDATA[<h2 id="the-benefits-of-using-gpus">The Benefits of Using GPUs</h2>
 <p>The Graphics Processing Unit (GPU) provides much higher
