@@ -34,8 +34,7 @@ you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p
   <entry>
     <title>1. Introduction to CUDA</title>
     <url>/CUDA/1-Introduction-to-CUDA/</url>
-    <content><![CDATA[<h1 id="introduction-to-cuda">1. Introduction to <code>CUDA</code></h1>
-<h2 id="the-benefits-of-using-gpus">1.1 The Benefits of Using GPUs</h2>
+    <content><![CDATA[<h2 id="the-benefits-of-using-gpus">1.1 The Benefits of Using GPUs</h2>
 <p>The Graphics Processing Unit (GPU) provides much higher
 <strong>instruction throughput</strong> and <strong>memory
 bandwidth</strong> than the CPU within a similar price and power
