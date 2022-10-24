@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://chaoyang-people.github.io/CUDA/1-Introduction-to-CUDA/image-20221024134123393.png">
 <meta property="og:image" content="https://chaoyang-people.github.io/CUDA/1-Introduction-to-CUDA/image-20221024135157716.png">
 <meta property="article:published_time" content="2022-10-24T05:57:45.000Z">
-<meta property="article:modified_time" content="2022-10-24T06:07:35.829Z">
+<meta property="article:modified_time" content="2022-10-24T06:12:23.199Z">
 <meta property="article:author" content="ZEPHRYUS">
 <meta property="article:tag" content="BASIC CUDA">
 <meta name="twitter:card" content="summary">
@@ -149,10 +149,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#the-benefits-of-using-gpus"><span class="nav-number">1.</span> <span class="nav-text">1.1 The Benefits of Using GPUs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cuda-a-general-purpose-parallel-computing-platform-and-programming-model"><span class="nav-number">2.</span> <span class="nav-text">1.2
-CUDA: A General-Purpose Parallel Computing Platform and
-Programming Model</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#a-scalable-programming-model"><span class="nav-number">3.</span> <span class="nav-text">1.3 A Scalable Programming
-Model</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#document-structure"><span class="nav-number">4.</span> <span class="nav-text">1.4 Document Structure</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#the-benefits-of-using-gpus"><span class="nav-number">1.</span> <span class="nav-text">The Benefits of Using GPUs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cuda-a-general-purpose-parallel-computing-platform"><span class="nav-number">2.</span> <span class="nav-text">CUDA:
+A General-Purpose Parallel Computing Platform</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#a-scalable-programming-model"><span class="nav-number">3.</span> <span class="nav-text">A Scalable Programming Model</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#document-structure"><span class="nav-number">4.</span> <span class="nav-text">Document Structure</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -255,7 +253,7 @@ Model</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-10-24 13:57:45 / Modified: 14:07:35" itemprop="dateCreated datePublished" datetime="2022-10-24T13:57:45+08:00">2022-10-24</time>
+      <time title="Created: 2022-10-24 13:57:45 / Modified: 14:12:23" itemprop="dateCreated datePublished" datetime="2022-10-24T13:57:45+08:00">2022-10-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -278,7 +276,7 @@ Model</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="the-benefits-of-using-gpus">1.1 The Benefits of Using GPUs</h2>
+        <h2 id="the-benefits-of-using-gpus">The Benefits of Using GPUs</h2>
 <p>The Graphics Processing Unit (GPU) provides much higher
 <strong>instruction throughput</strong> and <strong>memory
 bandwidth</strong> than the CPU within a similar price and power
@@ -293,9 +291,8 @@ parallel computations and therefore designed such that more transistors
 are devoted to <strong>data processing</strong> rather than <em>data
 caching</em> and <em>flow control</em>.</p>
 <p><img src="/CUDA/1-Introduction-to-CUDA/image-20221024133800478.png" alt="image-20221024133800478" style="zoom:67%;"></p>
-<h2 id="cuda-a-general-purpose-parallel-computing-platform-and-programming-model">1.2
-<code>CUDA</code>: A General-Purpose Parallel Computing Platform and
-Programming Model</h2>
+<h2 id="cuda-a-general-purpose-parallel-computing-platform"><code>CUDA</code>:
+A General-Purpose Parallel Computing Platform</h2>
 <p>In November 2006, NVIDIA introduced <code>CUDA</code>, a general
 purpose parallel computing platform and programming model that leverages
 the parallel compute engine in NVIDIA GPUs to solve many complex
@@ -306,8 +303,7 @@ application programming interfaces.</p>
 <img src="/CUDA/1-Introduction-to-CUDA/image-20221024134123393.png" alt="image-20221024134123393">
 <figcaption aria-hidden="true">image-20221024134123393</figcaption>
 </figure>
-<h2 id="a-scalable-programming-model">1.3 A Scalable Programming
-Model</h2>
+<h2 id="a-scalable-programming-model">A Scalable Programming Model</h2>
 <p>The core of the <code>CUDA</code> parallel programming model are
 three key abstractions - <strong>a hierarchy of thread groups</strong>,
 <strong>shared memories</strong>, and <strong>barrier
@@ -339,12 +335,12 @@ other, so that a GPU with more multiprocessors will automatically
 execute the program in less time than a GPU with fewer
 multiprocessors.</p>
 </blockquote>
-<h2 id="document-structure">1.4 Document Structure</h2>
+<h2 id="document-structure">Document Structure</h2>
 <p>This document is organized into the following sections:</p>
 <ol type="1">
-<li>The hierarchy of thread groups</li>
-<li>The hierarchy of GPU memories</li>
-<li>The synchronization mechanism</li>
+<li><strong>The hierarchy of thread groups</strong></li>
+<li><strong>The hierarchy of GPU memories</strong></li>
+<li><strong>The synchronization mechanism</strong></li>
 </ol>
 
     </div>
